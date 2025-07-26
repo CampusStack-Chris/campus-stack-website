@@ -10,30 +10,82 @@ export default function BnaiMitzvahPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="gradient-hero py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-accent-50/80 via-primary-50/60 to-spiritual-50/40"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-extrabold text-gray-900 sm:text-6xl">
+            <div className="inline-flex items-center bg-accent-100/80 text-accent-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              Certified Salesforce ISV Partner
+            </div>
+            <h1 className="text-4xl font-extrabold text-neutral-900 sm:text-6xl">
               B'nai Mitzvah for{" "}
-              <span className="text-blue-600">Salesforce</span>
+              <span className="bg-gradient-to-r from-accent-600 via-primary-600 to-spiritual-600 bg-clip-text text-transparent">Salesforce</span>
             </h1>
-            <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-              The complete solution for managing B'nai Mitzvah celebrations from Torah portion assignments 
-              to family coordination, built specifically for synagogues on the Salesforce platform.
+            <p className="mt-6 text-xl text-neutral-700 max-w-3xl mx-auto">
+              The complete certified Salesforce solution for managing B'nai Mitzvah celebrations. 
+              Available on the AppExchange, our ISV application handles Torah portion assignments, 
+              scheduling, honors, and family coordination all in one platform.
             </p>
             <div className="mt-10 flex justify-center gap-4">
+              <a
+                href="https://appexchange.salesforce.com/appxListingDetail?listingId=BNAI_MITZVAH_LISTING_ID"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-accent-600 to-accent-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-accent-700 hover:to-accent-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              >
+                Get on AppExchange
+              </a>
               <Link
                 href="/contact"
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                className="border-2 border-spiritual-500 text-spiritual-700 px-8 py-3 rounded-lg font-semibold hover:bg-spiritual-50 hover:border-spiritual-600 transition-all duration-300"
               >
                 Request Demo
               </Link>
-              <Link
-                href="#features"
-                className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
-              >
-                See Features
-              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ISV Partnership Section */}
+      <section className="py-16 bg-gradient-to-r from-accent-600 to-primary-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h2 className="text-3xl font-bold mb-4">Trusted AppExchange Solution</h2>
+            <p className="text-xl text-accent-100 max-w-3xl mx-auto mb-8">
+              Our B'nai Mitzvah management application is a certified Salesforce ISV solution, 
+              rigorously tested and optimized for synagogues and Jewish communities worldwide.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-lg mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Torah-Centric Design</h3>
+                <p className="text-accent-100">Built specifically for Jewish lifecycle events</p>
+              </div>
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-lg mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Community Focused</h3>
+                <p className="text-accent-100">Coordinate families, volunteers, and celebration details</p>
+              </div>
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-lg mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Proven & Secure</h3>
+                <p className="text-accent-100">Salesforce-certified and security approved</p>
+              </div>
             </div>
           </div>
         </div>

@@ -10,31 +10,82 @@ export default function MembershipPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="gradient-hero py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-success-50/80 via-primary-50/60 to-accent-50/40"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-extrabold text-gray-900 sm:text-6xl">
+            <div className="inline-flex items-center bg-success-100/80 text-success-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              Certified Salesforce ISV Partner
+            </div>
+            <h1 className="text-4xl font-extrabold text-neutral-900 sm:text-6xl">
               Membership Management for{" "}
-              <span className="text-blue-600">Salesforce</span>
+              <span className="bg-gradient-to-r from-success-600 via-primary-600 to-accent-600 bg-clip-text text-transparent">Salesforce</span>
             </h1>
-            <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-              Complete membership lifecycle management for religious organizations. 
-              Handle billing, donations, communications, and member engagement all in one 
-              integrated Salesforce platform.
+            <p className="mt-6 text-xl text-neutral-700 max-w-3xl mx-auto">
+              Complete membership lifecycle management built as a certified Salesforce ISV solution. 
+              Available on the AppExchange, our platform handles billing, donations, communications, 
+              and member engagement all in one integrated system.
             </p>
             <div className="mt-10 flex justify-center gap-4">
+              <a
+                href="https://appexchange.salesforce.com/appxListingDetail?listingId=MEMBERSHIP_LISTING_ID"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-success-600 to-success-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-success-700 hover:to-success-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              >
+                Get on AppExchange
+              </a>
               <Link
                 href="/contact"
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                className="border-2 border-accent-500 text-accent-700 px-8 py-3 rounded-lg font-semibold hover:bg-accent-50 hover:border-accent-600 transition-all duration-300"
               >
                 Request Demo
               </Link>
-              <Link
-                href="#features"
-                className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
-              >
-                See Features
-              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ISV Partnership Section */}
+      <section className="py-16 bg-gradient-to-r from-success-600 to-primary-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h2 className="text-3xl font-bold mb-4">Enterprise-Grade ISV Solution</h2>
+            <p className="text-xl text-success-100 max-w-3xl mx-auto mb-8">
+              Our membership management solution is a certified Salesforce ISV application, 
+              designed to scale from small congregations to large religious organizations with enterprise-level features.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-lg mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zM14 6a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h6zM4 14a2 2 0 002 2h8a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Scalable Architecture</h3>
+                <p className="text-success-100">Grows with your organization from 100 to 10,000+ members</p>
+              </div>
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-lg mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Integrated Communications</h3>
+                <p className="text-success-100">Email, SMS, and direct mail all within Salesforce</p>
+              </div>
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-lg mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Advanced Analytics</h3>
+                <p className="text-success-100">Deep insights into member engagement and giving patterns</p>
+              </div>
             </div>
           </div>
         </div>

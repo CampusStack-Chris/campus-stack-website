@@ -10,31 +10,82 @@ export default function PastoralCarePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="gradient-hero py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-spiritual-50/80 via-primary-50/60 to-accent-50/40"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-extrabold text-gray-900 sm:text-6xl">
+            <div className="inline-flex items-center bg-spiritual-100/80 text-spiritual-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              Certified Salesforce ISV Partner
+            </div>
+            <h1 className="text-4xl font-extrabold text-neutral-900 sm:text-6xl">
               Pastoral Care for{" "}
-              <span className="text-blue-600">Salesforce</span>
+              <span className="bg-gradient-to-r from-spiritual-600 via-primary-600 to-accent-600 bg-clip-text text-transparent">Salesforce</span>
             </h1>
-            <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-              Transform your pastoral care ministry with a comprehensive system designed 
-              specifically for religious organizations. Track member needs, coordinate support, 
-              and ensure no one in your community goes without care.
+            <p className="mt-6 text-xl text-neutral-700 max-w-3xl mx-auto">
+              Transform your pastoral care ministry with our certified Salesforce application. 
+              Available on the AppExchange, our ISV solution helps religious organizations track member needs, 
+              coordinate support, and ensure no one in your community goes without care.
             </p>
             <div className="mt-10 flex justify-center gap-4">
+              <a
+                href="https://appexchange.salesforce.com/appxListingDetail?listingId=PASTORAL_CARE_LISTING_ID"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-spiritual-600 to-spiritual-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-spiritual-700 hover:to-spiritual-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              >
+                Get on AppExchange
+              </a>
               <Link
                 href="/contact"
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                className="border-2 border-accent-500 text-accent-700 px-8 py-3 rounded-lg font-semibold hover:bg-accent-50 hover:border-accent-600 transition-all duration-300"
               >
                 Request Demo
               </Link>
-              <Link
-                href="#features"
-                className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
-              >
-                See Features
-              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ISV Partnership Section */}
+      <section className="py-16 bg-gradient-to-r from-primary-600 to-spiritual-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h2 className="text-3xl font-bold mb-4">Certified Salesforce ISV Partner</h2>
+            <p className="text-xl text-primary-100 max-w-3xl mx-auto mb-8">
+              Campus Stack is a certified Independent Software Vendor (ISV) partner with Salesforce. 
+              Our applications are rigorously tested, security-reviewed, and optimized for the Salesforce platform.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-lg mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Certified & Secure</h3>
+                <p className="text-primary-100">Security reviewed and approved by Salesforce</p>
+              </div>
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-lg mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">AppExchange Listed</h3>
+                <p className="text-primary-100">Available in the official Salesforce marketplace</p>
+              </div>
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-lg mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Native Integration</h3>
+                <p className="text-primary-100">Built specifically for Salesforce platform</p>
+              </div>
             </div>
           </div>
         </div>
