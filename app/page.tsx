@@ -10,13 +10,13 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold text-neutral-900 sm:text-6xl">
-              Salesforce Solutions for{" "}
-              <span className="bg-gradient-to-r from-primary-600 via-spiritual-600 to-accent-600 bg-clip-text text-transparent">Religious Organizations</span>
+              People-Centered Salesforce for{" "}
+              <span className="bg-gradient-to-r from-primary-600 via-spiritual-600 to-accent-600 bg-clip-text text-transparent">Large Non-Profits</span>
             </h1>
             <p className="mt-6 text-xl text-neutral-700 max-w-3xl mx-auto">
-              Campus Stack provides specialized Salesforce solutions designed specifically for religious organizations. 
-              Streamline your pastoral care, manage B'nai Mitzvah celebrations, and optimize membership management 
-              with our purpose-built applications.
+              Campus Stack delivers bespoke Salesforce solutions for mission-driven organizations that prioritize 
+              human connections and community impact. From care coordination to celebration management, 
+              our ISV solutions scale with your organization's growth and values.
             </p>
             <div className="mt-10 flex justify-center gap-4">
               <Link
@@ -26,25 +26,25 @@ export default function Home() {
                 Get Started
               </Link>
               <Link
-                href="#products"
+                href="/solutions"
                 className="border-2 border-accent-500 text-accent-700 px-8 py-3 rounded-lg font-semibold hover:bg-accent-50 hover:border-accent-600 transition-all duration-300"
               >
-                View Products
+                View Solutions
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Products Section */}
-      <section id="products" className="py-20 bg-white">
+      {/* Solutions Section */}
+      <section id="solutions" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Our Salesforce Solutions
+            <h2 className="text-3xl font-extrabold text-neutral-900 sm:text-4xl">
+              Managed Package Solutions
             </h2>
-            <p className="mt-4 text-xl text-gray-600">
-              Purpose-built applications that understand the unique needs of religious organizations
+            <p className="mt-4 text-xl text-neutral-600">
+              Certified ISV applications designed for large non-profit organizations focused on people-centered community engagement
             </p>
           </div>
 
@@ -58,14 +58,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-neutral-900 mb-4">
-                  Pastoral Care for Salesforce
+                  Care Coordination Management
                 </h3>
                 <p className="text-neutral-600 mb-6">
-                  Manage pastoral care relationships, track member needs, coordinate support, 
-                  and ensure no one in your community goes without care.
+                  Comprehensive system for tracking constituent needs, organizing support networks, 
+                  and ensuring systematic care delivery across your community. Popular with faith-based organizations.
                 </p>
                 <Link
-                  href="/pastoral-care"
+                  href="/solutions/pastoral-care"
                   className="inline-flex items-center text-spiritual-600 hover:text-spiritual-700 font-semibold group-hover:gap-2 transition-all duration-300"
                 >
                   Learn More
@@ -85,14 +85,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-neutral-900 mb-4">
-                  B'nai Mitzvah for Salesforce
+                  Celebration & Event Management
                 </h3>
                 <p className="text-neutral-600 mb-6">
-                  Comprehensive B'nai Mitzvah management from Torah portion assignments to 
-                  scheduling meetings, honors tracking, and family coordination.
+                  End-to-end management for complex celebrations and lifecycle events. 
+                  Coordinate scheduling, family engagement, honors, and community participation. Originally designed for Jewish communities.
                 </p>
                 <Link
-                  href="/bnai-mitzvah"
+                  href="/solutions/bnai-mitzvah"
                   className="inline-flex items-center text-accent-600 hover:text-accent-700 font-semibold group-hover:gap-2 transition-all duration-300"
                 >
                   Learn More
@@ -112,14 +112,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-neutral-900 mb-4">
-                  Membership Management
+                  Membership Lifecycle Management
                 </h3>
                 <p className="text-neutral-600 mb-6">
-                  Complete membership lifecycle management including billing, donations, 
-                  communications, event tracking, and comprehensive reporting.
+                  Complete member journey management including engagement tracking, 
+                  communications, giving patterns, and community involvement analytics. Perfect for any mission-driven organization.
                 </p>
                 <Link
-                  href="/membership"
+                  href="/solutions/membership"
                   className="inline-flex items-center text-success-600 hover:text-success-700 font-semibold group-hover:gap-2 transition-all duration-300"
                 >
                   Learn More
