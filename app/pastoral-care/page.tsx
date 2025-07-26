@@ -31,7 +31,7 @@ export default function PastoralCarePage() {
             </p>
             <div className="mt-10 flex justify-center gap-4">
               <a
-                href="https://appexchange.salesforce.com/appxListingDetail?listingId=PASTORAL_CARE_LISTING_ID"
+                href="https://appexchange.salesforce.com/appxListingDetail?listingId=7fd6b78f-83ec-4602-9515-cf98bc631593"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-spiritual-600 to-spiritual-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-spiritual-700 hover:to-spiritual-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"

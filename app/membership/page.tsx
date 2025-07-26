@@ -26,23 +26,26 @@ export default function MembershipPage() {
             </h1>
             <p className="mt-6 text-xl text-neutral-700 max-w-3xl mx-auto">
               Complete membership lifecycle management built as a certified Salesforce ISV solution. 
-              Available on the AppExchange, our platform handles billing, donations, communications, 
+              Currently in development for AppExchange launch, our platform handles billing, donations, communications, 
               and member engagement all in one integrated system.
             </p>
             <div className="mt-10 flex justify-center gap-4">
-              <a
-                href="https://appexchange.salesforce.com/appxListingDetail?listingId=MEMBERSHIP_LISTING_ID"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-success-600 to-success-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-success-700 hover:to-success-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-              >
-                Get on AppExchange
-              </a>
+              <div className="relative">
+                <button
+                  disabled
+                  className="bg-gradient-to-r from-success-400 to-success-500 text-white px-8 py-3 rounded-lg font-semibold cursor-not-allowed opacity-75"
+                >
+                  Coming Soon to AppExchange
+                </button>
+                <div className="absolute -top-2 -right-2 bg-accent-500 text-white text-xs px-2 py-1 rounded-full font-medium">
+                  In Development
+                </div>
+              </div>
               <Link
                 href="/contact"
                 className="border-2 border-accent-500 text-accent-700 px-8 py-3 rounded-lg font-semibold hover:bg-accent-50 hover:border-accent-600 transition-all duration-300"
               >
-                Request Demo
+                Early Access Demo
               </Link>
             </div>
           </div>
@@ -53,10 +56,11 @@ export default function MembershipPage() {
       <section className="py-16 bg-gradient-to-r from-success-600 to-primary-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
-            <h2 className="text-3xl font-bold mb-4">Enterprise-Grade ISV Solution</h2>
+            <h2 className="text-3xl font-bold mb-4">Enterprise-Grade ISV Solution - Coming Soon</h2>
             <p className="text-xl text-success-100 max-w-3xl mx-auto mb-8">
-              Our membership management solution is a certified Salesforce ISV application, 
-              designed to scale from small congregations to large religious organizations with enterprise-level features.
+              Our membership management solution is currently in development as a certified Salesforce ISV application, 
+              designed to scale from small congregations to large religious organizations with enterprise-level features. 
+              Expected AppExchange launch in Q2 2025.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="text-center">

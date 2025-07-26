@@ -52,17 +52,17 @@ export default function ContactPage() {
               </div>
               <h3 className="text-lg font-semibold mb-3">Pastoral Care</h3>
               <p className="text-primary-100 mb-4">Comprehensive care management system</p>
-              <a
-                href="https://appexchange.salesforce.com/appxListingDetail?listingId=PASTORAL_CARE_LISTING_ID"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-white bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg font-medium transition-all duration-300"
-              >
-                View on AppExchange
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+                             <a
+                 href="https://appexchange.salesforce.com/appxListingDetail?listingId=7fd6b78f-83ec-4602-9515-cf98bc631593"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="inline-flex items-center text-white bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg font-medium transition-all duration-300"
+               >
+                 View on AppExchange
+                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                 </svg>
+               </a>
             </div>
 
             {/* B'nai Mitzvah AppExchange */}
@@ -74,17 +74,17 @@ export default function ContactPage() {
               </div>
               <h3 className="text-lg font-semibold mb-3">B'nai Mitzvah</h3>
               <p className="text-primary-100 mb-4">Complete celebration management</p>
-              <a
-                href="https://appexchange.salesforce.com/appxListingDetail?listingId=BNAI_MITZVAH_LISTING_ID"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-white bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg font-medium transition-all duration-300"
-              >
-                View on AppExchange
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+                             <a
+                 href="https://appexchange.salesforce.com/appxListingDetail?listingId=48aaf335-7340-495a-ae9a-996fd58b3a15"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="inline-flex items-center text-white bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg font-medium transition-all duration-300"
+               >
+                 View on AppExchange
+                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                 </svg>
+               </a>
             </div>
 
             {/* Membership AppExchange */}
@@ -95,18 +95,19 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold mb-3">Membership Management</h3>
-              <p className="text-primary-100 mb-4">Complete lifecycle management</p>
-              <a
-                href="https://appexchange.salesforce.com/appxListingDetail?listingId=MEMBERSHIP_LISTING_ID"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-white bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg font-medium transition-all duration-300"
-              >
-                View on AppExchange
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+              <p className="text-primary-100 mb-4">Complete lifecycle management - Coming Q2 2025</p>
+              <div className="relative inline-flex items-center">
+                <button
+                  disabled
+                  className="inline-flex items-center text-white bg-white/10 px-4 py-2 rounded-lg font-medium cursor-not-allowed opacity-75"
+                >
+                  Coming Soon
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </button>
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent-500 rounded-full animate-pulse"></div>
+              </div>
             </div>
           </div>
         </div>

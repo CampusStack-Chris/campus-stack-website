@@ -31,7 +31,7 @@ export default function BnaiMitzvahPage() {
             </p>
             <div className="mt-10 flex justify-center gap-4">
               <a
-                href="https://appexchange.salesforce.com/appxListingDetail?listingId=BNAI_MITZVAH_LISTING_ID"
+                href="https://appexchange.salesforce.com/appxListingDetail?listingId=48aaf335-7340-495a-ae9a-996fd58b3a15"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-accent-600 to-accent-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-accent-700 hover:to-accent-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
